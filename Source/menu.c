@@ -30,10 +30,21 @@ void Initialise() {
 	VIDEO_WaitVSync();
 	if(rmode->viTVMode&VI_NON_INTERLACE) VIDEO_WaitVSync();
 }
-int main(int argc, int index, char *Languages char **argv) {
+int main(int argc, int index, char *Languages, char **argv) {
  printf("------------------------------------------------------\n");
  printf("AnyLanguage Patcher v1.0 by Koki                      \n");
  printf("------------------------------------------------------\n");
- printf("Current language: PLaCEHOLDER\n");
+ printf("Current language: null;\n");
  printf("Selected language: %c\n");
  printf("------------------------------------------------------\n");
+
+u32 buttonsDown = WPAD_buttonsDown(0);
+if (pressed & WPAD_BUTTON_A) {
+	init_disk();
+}
+}
+if (pressed & WPAD_BUTTON_HOME) {
+clrscr(1);
+printf("Home button pressed, peace!");
+exit(0);
+}
