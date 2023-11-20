@@ -36,4 +36,4 @@ int main(int argc, int index, char *Languages char **argv) {
  printf("------------------------------------------------------\n");
  printf("Current language: PLaCEHOLDER\n");
  printf("Selected language: %c\n");
- printf("-------------------------------
+ printf("------------------------------------------------------\n");
