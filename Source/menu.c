@@ -30,9 +30,13 @@ void Initialise() {
 	VIDEO_WaitVSync();
 	if(rmode->viTVMode&VI_NON_INTERLACE) VIDEO_WaitVSync();
 }
-int main(int argc, int index, char *Languages, char **argv) {
+int main(int argc, char **argv) {
+Initialise();
  printf("------------------------------------------------------\n");
  printf("AnyLanguage Patcher v1.0 by Koki                      \n");
+ printf("------------------------------------------------------\n");
+ printf("----CONTROLS------------------------------------------\n");
+ printf("Browse | LEFT/RIGHT/UP/DOWN, Exit | HOME\n");
  printf("------------------------------------------------------\n");
  printf("Current language: null;\n");
  printf("Selected language: %c\n");
