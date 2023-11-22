@@ -12,7 +12,14 @@ static GXRModeObj *rmode = NULL;
 
 clrscr = 0;
 
-void 
+void getLanguage(void) {
+int ret; 
+language = SYSCONF_GetLanguage();
+if (lang < 0) {
+	printf("unable to get settings aborting...\n")
+		exit(0);
+}
+}
 void Initialise() {
   
 	VIDEO_Init();
@@ -32,7 +39,6 @@ void Initialise() {
 	if(rmode->viTVMode&VI_NON_INTERLACE) VIDEO_WaitVSync();
 }
 int main(int argc, char **argv) {
-Initialise();
  printf("------------------------------------------------------\n");
  printf("AnyLanguage Patcher v1.0 by Koki                      \n");
  printf("------------------------------------------------------\n");
@@ -45,7 +51,8 @@ Initialise();
 
 u32 buttonsDown = WPAD_buttonsDown(0);
 if (pressed & WPAD_BUTTON_A) {
-	init_disk();
+	SYSCONF_SetLanguage();
+	
 }
 }
 if (pressed & WPAD_BUTTON_HOME) {
