@@ -7,10 +7,13 @@
 #include <gccore.h>
 #include <unistd.h>
 
+#define ITEMS 12
+
 static void *xfb = NULL;
 static GXRModeObj *rmode = NULL;
 
-clrscr = 0;
+char page_contents[ITEMS][64]
+char languages[][11] = {"Japanese  ","English  ", "German  ", "French  ", "Spanish  ", "Italian  ", "Dutch  "};
 
 void getLanguage(void) {
 int ret; 
@@ -43,15 +46,13 @@ int main(int argc, char **argv) {
  printf("AnyLanguage Patcher v1.0 by Koki                      \n");
  printf("------------------------------------------------------\n");
  printf("----CONTROLS------------------------------------------\n");
- printf("Browse | LEFT/RIGHT/UP/DOWN, Exit | HOME\n");
+ printf("Browse | DPAD, Exit | HOME\n");
  printf("------------------------------------------------------\n");
- printf("Current language: null;\n");
- printf("Selected language: %c\n");
+\
  printf("------------------------------------------------------\n");
 
 u32 buttonsDown = WPAD_buttonsDown(0);
 if (pressed & WPAD_BUTTON_A) {
-	SYSCONF_SetLanguage();
 	
 }
 }
