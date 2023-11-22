@@ -12,6 +12,7 @@ static GXRModeObj *rmode = NULL;
 
 clrscr = 0;
 
+void 
 void Initialise() {
   
 	VIDEO_Init();
