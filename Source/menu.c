@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <gccore.h>
 #include <unistd.h>
+#include <wiilight.h>
 
 #define ITEMS 12
 
@@ -19,7 +20,7 @@ void getLanguage(void) {
 int ret; 
 language = SYSCONF_GetLanguage();
 if (lang < 0) {
-	printf("unable to get settings aborting...\n")
+	printf("unable to get language settings aborting...\n")
 		exit(0);
 }
 }
