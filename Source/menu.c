@@ -46,9 +46,9 @@ int main(int argc, char **argv) {
  printf("AnyLanguage Patcher v1.0 by Koki                      \n");
  printf("------------------------------------------------------\n");
  printf("----CONTROLS------------------------------------------\n");
- printf("Browse | DPAD, Exit | HOME\n");
+ printf("Browse | DPAD, Exit | HOME, Select | A\n");
  printf("------------------------------------------------------\n");
-\
+
  printf("------------------------------------------------------\n");
 
 u32 buttonsDown = WPAD_buttonsDown(0);
