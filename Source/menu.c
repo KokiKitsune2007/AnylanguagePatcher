@@ -14,7 +14,7 @@ static void *xfb = NULL;
 static GXRModeObj *rmode = NULL;
 
 char page_contents[ITEMS][64]
-char languages[][11] = {"Default ","Japanese  ","English  ", "German  ", "French  ", "Spanish  ", "Italian  ", "Dutch  "};
+char languages[][11] = {"Japanese  ","English  ", "German  ", "French  ", "Spanish  ", "Italian  ", "Dutch  "};
 
 void getLanguage(void) {
 int ret; 
@@ -58,7 +58,7 @@ if (pressed & WPAD_BUTTON_A) {
 }
 }
 if (pressed & WPAD_BUTTON_HOME) {
-clrscr(1);
+clrscr(0);
 printf("Home button pressed, peace!");
 exit(0);
 }
