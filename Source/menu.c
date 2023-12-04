@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
 
 u32 buttonsDown = WPAD_buttonsDown(0);
 if (pressed & WPAD_BUTTON_A) {
-	
+	// More code will come soon...
 }
 }
 if (pressed & WPAD_BUTTON_HOME) {
