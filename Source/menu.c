@@ -14,7 +14,7 @@ static void *xfb = NULL;
 static GXRModeObj *rmode = NULL;
 
 char page_contents[ITEMS][64]
-char languages[][11] = {"Japanese  ","English  ", "German  ", "French  ", "Spanish  ", "Italian  ", "Dutch  "};
+char languages[][11] = {"Default ","Japanese  ","English  ", "German  ", "French  ", "Spanish  ", "Italian  ", "Dutch  "};
 
 void getLanguage(void) {
 int ret; 
