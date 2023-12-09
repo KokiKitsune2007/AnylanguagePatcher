@@ -49,7 +49,7 @@ int main(int argc, char **argv) {
  printf("----CONTROLS------------------------------------------\n");
  printf("Browse | DPAD, Exit | HOME, Select | A\n");
  printf("------------------------------------------------------\n");
-
+optiontable();
  printf("------------------------------------------------------\n");
 
 u32 buttonsDown = WPAD_buttonsDown(0);
